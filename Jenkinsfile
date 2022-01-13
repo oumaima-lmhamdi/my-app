@@ -1,6 +1,6 @@
 pipeline {
 environment {
-registry = "lobnaameskane/jenkinsimage"
+registry = "lobnaameskane/dockerimage"
 registryCredential = 'dockerhub'
 dockerImage = ''
 
