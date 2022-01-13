@@ -2,7 +2,7 @@ pipeline {
 environment {
 registry = "lobnaameskane/jenkinsimage"
 registryCredential = 'dockerhub'
-dockerImage = ''
+dockerImage = 'openjdk:8-jdk-alpine'
 }
 agent any
 stages {
@@ -21,7 +21,7 @@ steps{
 stage('Deploy Image') {
 steps{
  script {
- docker.withRegistry( '', registryCredential ) {
+ docker.withRegistry( 'openjdk:8-jdk-alpine', registryCredential ) {
  dockerImage.push()
  }
  }
