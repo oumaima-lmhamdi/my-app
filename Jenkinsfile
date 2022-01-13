@@ -3,6 +3,7 @@ environment {
 registry = "lobnaameskane/jenkinsimage"
 registryCredential = 'dockerhub'
 dockerImage = ''
+  registryUrl 'https://index.docker.io/v2/'
 }
 agent any
 stages {
