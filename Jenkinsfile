@@ -6,9 +6,9 @@ dockerImage = ''
 
 }
 agent any
- tools {
+tools {
     maven 'Maven'
-  }
+}
 stages {
  stage('Build') {
  steps {
